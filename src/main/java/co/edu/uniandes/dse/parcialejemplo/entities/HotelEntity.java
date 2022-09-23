@@ -9,7 +9,6 @@ import uk.co.jemos.podam.common.PodamExclude;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
 /**
@@ -28,7 +27,6 @@ public class HotelEntity {
     @OneToMany
     private List<HabitacionEntity> habitaciones = new ArrayList<>();
 
-    private Long id;
     private String nombre;
     private String direccion;
     private Integer num_estrellas;
